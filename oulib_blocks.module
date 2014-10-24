@@ -1,10 +1,14 @@
 <?php
 /**
 * @file
-* A description of what your module does.
+* Module for oulib_blocks
 */
 
-
+/**
+ * Implements hook_block_info().
+ *
+ * This hook declares what blocks are provided by the module.
+ */
 function oulib_block_info(){
     $blocks = array();
     $blocks['ouprimo_search'] = array(
@@ -15,13 +19,22 @@ function oulib_block_info(){
 
 }
 
+/**
+ * Implements hook_block_view().
+ *
+ * This hook generates the contents of the blocks themselves.
+ */
 function oulib_block_view($delta=''){
 
     switch ($delta) {
 
-        case 'ouprimo_search':
+      /*
+       * OU Primo Search Block 
+       */
+      case 'ouprimo_search':
 
-            $primoform = <<<XYZ
+        /* search form specified by primo */
+        $primoform = <<<XYZ
 <form name="searchForm" role="search" method="get" action="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" id="simple" target="_self" onsubmit="searchPrimo()">
     <input name="institution" value="OU" type="hidden">
     <input name="vid" value="OU" type="hidden">
@@ -30,14 +43,13 @@ function oulib_block_view($delta=''){
     <input name="displayMode" value="full" type="hidden">
     <input type="hidden" id="primoQuery" name="query" />
     <input type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
-<select name="search_scope">
-<option value="default_scope">Discover</option>
-<option value="ou_symphony">Library Catalog</option>
-</select>
+    <select name="search_scope">
+        <option value="default_scope">Discover</option>
+        <option value="ou_symphony">Library Catalog</option>
+    </select>
     <input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">
-  </form>
+</form>
 XYZ;
-
             $block = array();
             $block['subject'] = t('OU Primo Search');
             $block['content'] = $primoform;
