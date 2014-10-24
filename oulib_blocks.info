@@ -1,4 +1,6 @@
 name = OU Libraries Blocks
 description = Blocks for the OU Libraries site
 core = 7.x
+dependencies[] = block
 package = OU Libraries
+scripts[] = ouprimo.js
