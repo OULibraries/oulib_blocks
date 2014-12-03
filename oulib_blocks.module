@@ -45,7 +45,7 @@ function oulib_blocks_block_view($delta=''){
     <input type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
     <select name="search_scope">
         <option value="default_scope">Discover</option>
-        <option value="ou_symphony">Library Catalog</option>
+        <option value="ou_symphony">Discover Local (Catalog)</option>
     </select>
     <input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">
 </form>
