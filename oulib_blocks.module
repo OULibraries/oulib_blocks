@@ -46,16 +46,16 @@ function oulib_blocks_block_view($delta=''){
 			<input type="hidden" id="primoQuery" name="query" />
 		</div>
 	</div>
-	
+	<input type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
 	<div class="row">
 		<div class="col-md-6">
-			<input class="form-control form-text" type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
+			<select name="search_scope" class="form-control form-text">
+				<option value="default_scope">Discover</option>
+				<option value="ou_symphony">Discover Local (Catalog)</option>
+			</select>
 		</div>
-	</div>
-    <select name="search_scope">
-        <option value="default_scope">Discover</option>
-        <option value="ou_symphony">Discover Local (Catalog)</option>
-    </select>
+	</div> 
+    
     <input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">
 </form>
 <div class="discover-search-links"><a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a></div>
