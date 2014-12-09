@@ -42,21 +42,21 @@ function oulib_blocks_block_view($delta=''){
     <input name="onCampus" value="true" type="hidden">
     <input name="displayMode" value="full" type="hidden">
 	<div class="row">
-		<div class="col-md-4 col-sm-5">
+		<div class="col-md-5 col-sm-12 col-xs-12">
 			<input class="form-control form-text" type="hidden" id="primoQuery" name="query" />
 			<input class="form-control form-text" type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
 		</div>
 	
 	
-		<div class="col-md-5 col-sm-5">
+		<div class="col-md-5 col-sm-11 col-xs-10">
 			<select name="search_scope" class="form-control form-text">
 				<option value="default_scope">Discover</option>
 				<option value="ou_symphony">Discover Local (Catalog)</option>
 			</select>
 		</div>
 		
-		<div class="col-md-2 col-sm-2">
-			<button class="btn btn-default form-submit" id="go" value="Go" name="op" value="Log in" type="button" onClick="searchPrimo()">Search</button>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<button class="btn btn-default form-submit" id="go" value="Go" name="op" value="Log in" type="button" onClick="searchPrimo()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 			<!-- <input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">-->
 		</div>
 	</div> 
@@ -64,6 +64,7 @@ function oulib_blocks_block_view($delta=''){
     
 </form>
 <div class="discover-search-links"><a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a></div>
+<p>&nbsp;</p>
 XYZ;
             $block = array();
             $block['subject'] = t('OU Primo Search');
