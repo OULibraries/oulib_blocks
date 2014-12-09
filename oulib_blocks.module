@@ -42,21 +42,21 @@ function oulib_blocks_block_view($delta=''){
     <input name="onCampus" value="true" type="hidden">
     <input name="displayMode" value="full" type="hidden">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<input class="form-control form-text" type="hidden" id="primoQuery" name="query" />
 			<input class="form-control form-text" type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
 		</div>
 	
 	
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<select name="search_scope" class="form-control form-text">
 				<option value="default_scope">Discover</option>
 				<option value="ou_symphony">Discover Local (Catalog)</option>
 			</select>
 		</div>
 		
-		<div class="col-md-6">
-			<button class="btn btn-default form-submit" id="go" value="Go" name="op" value="Log in" type="button" onClick="searchPrimo()">
+		<div class="col-md-4">
+			<button class="btn btn-default form-submit" id="go" value="Go" name="op" value="Log in" type="button" onClick="searchPrimo()"></button>
 			<input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">
 		</div>
 	</div> 
