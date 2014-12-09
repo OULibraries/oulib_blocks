@@ -43,10 +43,11 @@ function oulib_blocks_block_view($delta=''){
     <input name="displayMode" value="full" type="hidden">
 	<div class="row">
 		<div class="col-md-6">
-			<input type="hidden" id="primoQuery" name="query" />
+			<input class="form-control form-text" type="hidden" id="primoQuery" name="query" />
+			<input class="form-control form-text" type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
 		</div>
 	</div>
-	<input type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
+	
 	<div class="row">
 		<div class="col-md-6">
 			<select name="search_scope" class="form-control form-text">
