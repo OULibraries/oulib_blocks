@@ -42,7 +42,7 @@ function oulib_blocks_block_view($delta=''){
     <input name="onCampus" value="true" type="hidden">
     <input name="displayMode" value="full" type="hidden">
 	<div class="row">
-		<div class="col-md-5">
+		<div class="col-md-5" style="margin-right:2px;">
 			<input class="form-control form-text" type="hidden" id="primoQuery" name="query" />
 			<input class="form-control form-text" type="text"  id="primoQueryTemp" value=" " name="queryTemp" />
 		</div>
