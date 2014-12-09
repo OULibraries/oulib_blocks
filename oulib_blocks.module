@@ -48,14 +48,14 @@ function oulib_blocks_block_view($delta=''){
 		</div>
 	
 	
-		<div class="col-md-5 col-md-offset-1 ">
+		<div class="col-md-4">
 			<select name="search_scope" class="form-control form-text">
 				<option value="default_scope">Discover</option>
 				<option value="ou_symphony">Discover Local (Catalog)</option>
 			</select>
 		</div>
 		
-		<div class="col-md-2">
+		<div class="col-md-3">
 			<button class="btn btn-default form-submit" id="go" value="Go" name="op" value="Log in" type="button" onClick="searchPrimo()">Search</button>
 			<!-- <input value="Go" id="go" title="Search" alt="Search" type="button" onClick="searchPrimo()">-->
 		</div>
