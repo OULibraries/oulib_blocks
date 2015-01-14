@@ -35,7 +35,7 @@ function oulib_blocks_block_view($delta=''){
 
         /* search form specified by primo */
         $primoform = <<<XYZ
-<form name="searchForm" role="search" method="get" action="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" id="simple" target="_self" onsubmit="searchPrimo()">
+<form name="searchForm" role="search" method="get" action="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" id="simple" target="_self" onsubmit="searchPrimo()">
     <input name="institution" value="OU" type="hidden">
     <input name="vid" value="OU" type="hidden">
     <input name="group" value="GUEST" type="hidden">
@@ -64,7 +64,7 @@ function oulib_blocks_block_view($delta=''){
     
     
 </form>
-<div class="discover-search-links"><a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-lb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a></div>
+<div class="discover-search-links"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a></div>
 <p>&nbsp;</p>
 XYZ;
             $block = array();
