@@ -3,8 +3,16 @@
  *  primo form submit, required for some reason
  *
  */
-function searchPrimo()
-{
-    document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value;
-    document.forms["searchForm"].submit();
-}
+
+(function ($) {
+  Drupal.behaviors.oublocks = {
+    attach: function (context, settings) {
+      console.log("Attaching!");
+      $(context, 'form.searchPrimo').submit(function(event) {
+        var input = $(event.target).find(":text").first();
+        input.val("any,contains," + input.val());
+        return true;
+      });
+    }
+  };
+}(jQuery));
