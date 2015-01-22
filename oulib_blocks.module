@@ -61,7 +61,7 @@ function oulib_blocks_block_view($delta=''){
 
 
 </form>
-<div class="discover-search-links"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a></div> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" target="_blank">Discover Local (Catalog)</a>
+<div class="discover-search-links"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" target="_blank">Discover Local (Catalog)</a></div>
 <p>&nbsp;</p>
 XYZ;
             $block = array();
