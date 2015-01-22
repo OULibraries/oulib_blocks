@@ -50,7 +50,7 @@ function oulib_blocks_block_view($delta=''){
         <div class="col-md-5 col-sm-11 col-xs-10">
             <select name="search_scope" class="form-control form-text">
                 <option value="default_scope">Discover</option>
-                <option value="ou_symphony">Discover Local (Catalog)</option>
+                <option value="ou_alma">Discover Local (Catalog)</option>
             </select>
         </div>
 
