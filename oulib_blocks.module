@@ -14,8 +14,23 @@ function oulib_blocks_block_info(){
     $blocks['ouprimo_search'] = array(
         'info' => t('OU Primo Search'),
     );
+    $blocks['ouprimo_search_local'] = array(
+        'info' => t('OU Primo Search (Local)'),
+    );
     return $blocks;
 
+}
+
+function oulib_blocks_theme($existing, $type, $theme, $path) {
+  return array(
+    'ou_primo_search' => array(
+      'template' => 'ou-primo-search',
+      'variables' => array(
+        'search_scope' => 'default_scope',
+        'button_title' => 'Go',
+      ),
+    ),
+  );
 }
 
 /**
@@ -26,48 +41,21 @@ function oulib_blocks_block_info(){
 function oulib_blocks_block_view($delta=''){
 
     switch ($delta) {
-
-      /*
-       * OU Primo Search Block 
-       */
       case 'ouprimo_search':
+        $block = array();
+        $variables = array(
+          "search_scope" => "default_scope",
+        );
+        $block['content'] = theme('ou_primo_search', $variables);
+        break;
 
-        /* search form specified by primo */
-        $primoform = <<<XYZ
-<form name="searchForm" role="search" method="get" action="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" id="simple" target="_self" class="searchPrimo">
-    <input name="institution" value="OU" type="hidden">
-    <input name="vid" value="OU" type="hidden">
-    <input name="group" value="GUEST" type="hidden">
-    <input name="onCampus" value="true" type="hidden">
-    <input name="displayMode" value="full" type="hidden">
-
-    <div class="row">
-        <div class="col-md-5 col-sm-12 col-xs-12" style="padding-right:5px">
-            <input class="form-control form-text" type="hidden" name="query" />
-            <input class="form-control form-text" type="text" name="queryTemp" />
-        </div>
-
-        <div class="col-md-5 col-sm-11 col-xs-10">
-            <select name="search_scope" class="form-control form-text">
-                <option value="default_scope">Discover</option>
-                <option value="ou_alma">Discover Local (Catalog)</option>
-            </select>
-        </div>
-
-        <div class="col-md-1 col-sm-1 col-xs-1">
-            <button class="btn btn-default form-submit btn-primary" value="Go" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-        </div>
-    </div> 
-
-
-</form>
-<div class="discover-search-links"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&dscnt=1&frbg=&scp.scps=scope%3A(%22OU%22)%2Cprimo_central_multiple_fe&tab=default_tab&dstmp=1381270174104&srt=rank&ct=search&dum=true&indx=1&vl(freeText0)=&vid=OU&fn=search" taget="_blank">Browse Search</a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" target="_blank">Discover Local (Catalog)</a></div>
-<p>&nbsp;</p>
-XYZ;
-            $block = array();
-            $block['subject'] = t('OU Primo Search');
-            $block['content'] = $primoform;
-            break;
+      case 'ouprimo_search_local':
+        $block = array();
+        $variables = array(
+          "search_scope" => "ou_alma",
+        );
+        $block['content'] = theme('ou_primo_search', $variables);
+        break;
     }
 
     return $block;
