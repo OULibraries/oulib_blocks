@@ -16,7 +16,7 @@
     <input name="displayMode" value="full" type="hidden">
 
     <div class="row">
-        <div class="col-md-5 col-sm-12 col-xs-12" style="padding-right:5px">
+        <div class="col-md-8 col-md-push-4 col-sm-12 col-xs-12" style="padding-right:5px">
             <input class="form-control form-text" type="hidden" name="query" />
             <input class="form-control form-text" type="text" name="queryTemp" />
         </div>
