@@ -15,17 +15,19 @@
     <input name="onCampus" value="true" type="hidden">
     <input name="displayMode" value="full" type="hidden">
 
-    <div class="row">
-        <div class="col-md-11 col-sm-11 col-xs-11" style="padding-right:5px">
+    <div class="container-fluid">
+	<div class="row">
+        <div class="col-md-11 col-sm-10 col-xs-10" style="padding-right:5px">
             <input class="form-control form-text" type="hidden" name="query" />
             <input class="form-control form-text" type="text" name="queryTemp" />
         </div>
         <input name="search_scope" value="<?php print $search_scope; ?>" type="hidden">
 
-        <div class="col-md-1 col-sm-1 col-xs-1">
+        <div class="col-md-1 col-sm-2 col-xs-2">
             <button class="btn btn-default form-submit btn-primary" value="<?php print $button_title; ?>" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </div>
     </div> 
+	</div>
 
 
 </form>
