@@ -17,7 +17,7 @@
 
     <div class="container-fluid">
 	<div class="row">
-        <div class="col-md-11 col-sm-10 col-xs-10" style="padding-right:5px">
+        <div class="col-md-10 col-sm-9 col-xs-9" style="padding-right:5px">
             <input class="form-control form-text" type="hidden" name="query" />
             <input class="form-control form-text" type="text" name="queryTemp" />
         </div>
@@ -26,10 +26,17 @@
         <div class="col-md-1 col-sm-2 col-xs-2">
             <button class="btn btn-default form-submit btn-primary" value="<?php print $button_title; ?>" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </div>
+		<div class="row">
+			<div class="col-md-10 col-sm-9 col-xs-9" style="padding-right:5px">
+				<div style="text-align:right;"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search</a>| <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" target="_blank">Discover Local (Catalog)</div>
+			</div>
+			
+			 <div class="col-md-1 col-sm-2 col-xs-2">
+				<p>&nbsp;</p>
+        </div>
+		</div>
     </div> 
 	</div>
-
-
 </form>
-<div class="discover-search-links"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a></div>
+<div><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a></div>
 <p>&nbsp;</p>
