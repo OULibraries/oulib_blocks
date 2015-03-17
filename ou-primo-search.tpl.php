@@ -38,5 +38,4 @@
     </div> 
 	</div>
 </form>
-<div><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a></div>
-<p>&nbsp;</p>
+
