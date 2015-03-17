@@ -26,6 +26,7 @@
         <div class="col-md-1 col-sm-2 col-xs-2">
             <button class="btn btn-default form-submit btn-primary" value="<?php print $button_title; ?>" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </div>
+		</div>
 		</form>
 		<div class="row">
 			<div class="col-md-10 col-sm-9 col-xs-9" style="padding-right:5px">
