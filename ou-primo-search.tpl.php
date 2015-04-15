@@ -20,7 +20,14 @@
         <div class="col-md-10 col-sm-9 col-xs-9" style="padding-right:5px">
             <input class="form-control form-text" type="hidden" name="query" />
             <input class="form-control form-text" type="text" name="queryTemp" />
-			<p style="text-align:right;"><a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> | <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" Target="_blank">Discover Local (Catalog) </a></p>
+			
+			<div style="text-align:right; float:right;"> <a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&scp.scps=scope%3A%28ou_dspace%29%2Cscope%3A%2801OKLA_NORMANLAW%29&dscnt=0&menuitem=0&vid=OU" Target="_blank">Discover Local (Catalog) </a></div>
+			
+			<div style="float:right; padding:0px 10px;" class="discover-border"> | </div>
+			
+			<div style="text-align:right; float:right;">
+			<a href="http://ou-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&menuitem=0&vid=OU" Target="_blank">Advanced Search </a> </div> 
+			
         </div>
         <input name="search_scope" value="<?php print $search_scope; ?>" type="hidden">
 
