@@ -17,6 +17,9 @@ function oulib_blocks_block_info(){
     $blocks['ouprimo_search_local'] = array(
         'info' => t('OU Primo Search (Local)'),
     );
+    $blocks['cas_logout_button'] = array(
+        'info' => t('The logout button destination for CAS'),
+    );
     return $blocks;
 
 }
@@ -29,6 +32,9 @@ function oulib_blocks_theme($existing, $type, $theme, $path) {
         'search_scope' => 'default_scope',
         'button_title' => 'Go',
       ),
+    ),
+    'cas_logout_button' => array(
+      'template' => 'cas_logout_button',
     ),
   );
 }
@@ -55,6 +61,12 @@ function oulib_blocks_block_view($delta=''){
           "search_scope" => "ou_alma",
         );
         $block['content'] = theme('ou_primo_search', $variables);
+        break;
+
+      case 'cas_logout_button':
+        $block = array();
+        $block['content'] = theme('cas_logout_button');
+        return $block;
         break;
     }
 
