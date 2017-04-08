@@ -19,6 +19,7 @@ function oulib_blocks_block_info(){
     );
     $blocks['cas_logout_button'] = array(
         'info' => t('The logout button destination for CAS'),
+        'cache'=> DRUPAL_NO_CACHE,
     );
     return $blocks;
 
